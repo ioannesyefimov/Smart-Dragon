@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.42cf11fa.css",
+    "main.js": "/static/js/main.7fd3a067.js",
+    "static/media/dragonicon.ico": "/static/media/dragonicon.fd65a01b3c0fa465e3ff.ico",
+    "static/media/axios.cjs": "/static/media/axios.23eb433efd1ad85cbcf9.cjs",
+    "index.html": "/index.html",
+    "main.42cf11fa.css.map": "/static/css/main.42cf11fa.css.map",
+    "main.7fd3a067.js.map": "/static/js/main.7fd3a067.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42cf11fa.css",
+    "static/js/main.7fd3a067.js"
+  ]
+}

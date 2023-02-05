@@ -1,0 +1,64 @@
+.newbie {
+    color: hsla(160, 97%, 54%, 1) !important
+    
+}
+.newbie::after {
+    content: '0-9';
+
+}
+.junior {
+    color: hsl(186, 100%, 52%) !important
+}
+.junior::after {
+    content: '10-19';
+
+}
+.professor {
+    color : hsl(226, 100%, 50%) !important
+}
+.professor::after {
+    content: '20-39';
+
+}
+.chancellor {
+    color: hsl(266, 100%, 50%) !important
+}
+.chancellor::after {
+    content: '40-59';
+
+}
+.vizier {
+    color: hsl(305, 100%, 50%) !important
+}
+.vizier::after {
+    content: '60-99';
+
+}
+.emperor {
+    color: hsl(0, 100%, 50%) !important
+}
+.emperor::after {
+    content: '100+';
+
+}
+
+
+.newbie-logo {
+    box-shadow: 0 0 15px 10px hsla(160, 97%, 54%, 1) !important
+    
+}
+.junior-logo {
+   box-shadow: 0 0 15px 10px hsl(186, 100%, 52%) !important
+}
+.professor-logo {
+    box-shadow: 0 0 15px 10px hsl(226, 100%, 50%) !important
+}
+.chancellor-logo {
+    box-shadow: 0 0 15px 10px hsl(266, 100%, 50%) !important
+}
+.vizier-logo {
+    box-shadow: 0 0 15px 10px hsl(305, 100%, 50%) !important
+}
+.emperor-logo {
+   box-shadow: 0 0 15px 10px hsl(0, 100%, 50%) !important
+}

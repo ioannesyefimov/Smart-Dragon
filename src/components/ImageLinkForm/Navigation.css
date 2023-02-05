@@ -1,0 +1,56 @@
+.navigation-component {
+    /* position: absolute; */
+    top: 0px;
+    left: 90%;
+    display: flex;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    /* padding: 1; */
+}
+
+.navigation {
+
+   
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 2rem;
+
+    color: rgb(13, 10, 41);
+}
+
+.navigation-home {
+    margin-inline: 5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation-sign_register {
+    display: flex;
+    margin-inline: 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation-profile {
+    margin-right: 3rem;
+}
+.navigation-profile .logo {
+    position: absolute;
+    top: 5%;
+}
+.navigation-profile .wrapper{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap:2rem;
+}
+.navigation p:hover{
+    text-decoration: underline;
+    color: gold;
+}
+.profile {
+}

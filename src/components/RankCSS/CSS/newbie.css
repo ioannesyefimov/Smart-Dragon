@@ -1,0 +1,25 @@
+.Tilt {
+    box-shadow: 0 0 15px 10px hsla(160, 97%, 54%, 1) 
+}
+.rank-text p {
+    color: hsla(160, 97%, 54%, 1) 
+
+}
+.rank-component .rank-number {
+    color: hsla(160, 97%, 54%, 1) 
+
+}
+.profile-name {
+    color: hsla(160, 97%, 54%, 1) 
+
+}
+.rank {
+    color: hsla(160, 97%, 54%, 1) 
+
+}
+.form {
+    background-color: hsla(160, 97%, 54%, 0.5);
+    opacity: 0.9;
+    background: radial-gradient(circle, transparent 20%, hsla(160, 97%, 54%, 0.5) 20%, hsla(160, 97%, 54%, 0.5) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, hsla(160, 97%, 54%, 0.5) 20%, hsla(160, 97%, 54%, 0.5) 80%, transparent 80%, transparent) 12.5px 12.5px, linear-gradient(#000000 1px, transparent 1px) 0 -0.5px, linear-gradient(90deg, #000000 1px, hsla(160, 97%, 54%, 0.5) 1px) -0.5px 0;
+    background-size: 25px 25px, 25px 25px, 12.5px 12.5px, 12.5px 12.5px;
+}

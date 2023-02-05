@@ -1,0 +1,36 @@
+.rank-component {
+    display: grid;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.rank-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1.1rem;
+    color: white;
+    letter-spacing: .1rem;
+    font-size:2rem;
+}
+.rank-number {
+    cursor: pointer;
+
+    
+    filter: drop-shadow(0px 0px 15px rgb(255, 255, 255));
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.name {
+    
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 0;
+    /* text-transform: uppercase; */
+    filter: drop-shadow(0px 0px 15px rgb(255, 255, 255));
+    cursor: pointer;
+}
+

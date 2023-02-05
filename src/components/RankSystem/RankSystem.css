@@ -1,0 +1,28 @@
+.rank-system-component {
+ display: grid;
+ text-transform: uppercase;
+font-weight: 700;
+box-shadow: 0 0 5px 0px rgba(255, 255, 255, 0.518);
+padding-inline: 2rem;
+
+font-family: 'Oswald', sans-serif;
+}
+.rank-system-component h1 {
+    color: white;
+    font-size: clamp(1.75rem, 1.398rem + 1.502vw, 2.75rem);
+    text-transform: uppercase;
+}
+.rank-system-component p {
+    font-size: clamp(1.25rem, 1.162rem + 0.376vw, 1.5rem);
+        text-transform: uppercase;
+}
+.wrapper {
+    font-weight: 700;
+}
+.ranks-container {
+    display:grid;
+grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+.ranks-container > * {
+    flex-grow: 1;
+}

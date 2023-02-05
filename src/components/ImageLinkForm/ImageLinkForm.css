@@ -1,0 +1,37 @@
+.link-form p {
+    text-align: center;
+    font-size: 1.35rem;
+    letter-spacing: .1rem;
+    font-weight: 400;
+    color: rgb(13, 10, 41);
+
+    text-transform: uppercase;
+    font-weight: 700;
+    filter: drop-shadow(1px 2px 10px  rgba(87, 50, 255, 0.5));
+}
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    
+    box-shadow: 0 0 12px 1px #71d8f7
+}
+.form > * {
+    flex-grow: 1;
+}
+.link-form{
+}
+.input-container button {
+    border: 1px solid white
+}
+.form {
+    background-color: #71f7a0;
+    opacity: 0.9;
+    background: radial-gradient(circle, transparent 20%, #71f7a0 20%, #71f7a0 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #71f7a0 20%, #71f7a0 80%, transparent 80%, transparent) 12.5px 12.5px, linear-gradient(#000000 1px, transparent 1px) 0 -0.5px, linear-gradient(90deg, #000000 1px, #71f7a0 1px) -0.5px 0;
+    background-size: 25px 25px, 25px 25px, 12.5px 12.5px, 12.5px 12.5px;
+    width: clamp(18.75rem, 12.148rem + 28.169vw, 37.5rem);
+}

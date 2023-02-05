@@ -1,0 +1,35 @@
+.bounding-box{
+    position: absolute;
+    box-shadow: 0 0 0 3px #149df2 inset;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    
+}
+
+.face-recognition-component {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: auto auto;
+    /* width: 100%; */
+    margin-bottom: 3rem;
+}
+.face-inner-div {
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.face-inner-div img {
+    box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.472);
+    margin-top: 0;
+    /* border: 1px black solid; */
+}
+#inputimage {
+    width: 450px;
+    height: auto;
+
+}
