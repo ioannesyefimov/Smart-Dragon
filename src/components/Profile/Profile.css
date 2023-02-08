@@ -1,20 +1,20 @@
 .profile-component{
-  display: flex;
-  flex-direction: column;
-
   gap:5rem;
   margin-top: 0rem;
   color: white;
-  font-size: 3rem;
+  display: grid;
+  font-size: 2.5rem;
   text-align: center;
 
 }
+.profile-component > * {
+}
 
 .profile-user {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+justify-content: center;
+  align-items: center;
+  gap: 1.9rem;
     margin-top: 4rem;
 }
 @media (max-width: 500px){
@@ -60,7 +60,7 @@
   letter-spacing: .1rem;
   font-family: 'Oswald', sans-serif;
   color: rgb(255, 255, 255);
-  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.935);
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.401);
   border: none;
   margin-inline: auto;
 }

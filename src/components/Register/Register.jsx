@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
+import NavigationLoggedOut from '../LayOuts/LoggedOutLayOut'
+import {useAuth} from '../userContext/userContext'
+function Register() {
 
-function Register({onRouteChange, loadUser}) {
+   const {loadUser} = useAuth()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [name, setName] = useState('')
@@ -30,14 +33,14 @@ function Register({onRouteChange, loadUser}) {
         .then(user => {
             if(user.id){
                 loadUser(user)
-                onRouteChange('home')
-            } else {
-                onRouteChange('register')
             }
+            
         })
     }
 
   return (
+    <>
+    {/* <NavigationLoggedOut/> */}
     <article style={{marginTop: '8rem'}} className="br2  ba dark-gray b--black-10 mv4 w-100 w-70-m w-25-l mw6 shadow-5 center ">
         <main className="pa4 black-80 tc">
             <form className="measure w-100 center">
@@ -74,6 +77,7 @@ function Register({onRouteChange, loadUser}) {
         </main>
 
     </article>
+    </>
   )
 }
 

@@ -1,8 +1,14 @@
 import React, {useState} from 'react'
 import './SignIn.css'
-function SignIn({onRouteChange, loadUser}) {
+import {Link, useNavigate} from 'react-router-dom';
+import { useAuth } from '../userContext/userContext';
+
+
+function SignIn() {
     const [signInEmail, setSignInEmail] = useState('')
     const [signInPassword, setSignInPassword] = useState('')
+    const navigate = useNavigate();
+    const {loadUser} = useAuth()
 
     let onEmailChange = (e) => {
         setSignInEmail(e.target.value)
@@ -11,7 +17,8 @@ function SignIn({onRouteChange, loadUser}) {
         setSignInPassword(e.target.value)
     }
 
-    let onSubmitSignIn = () => {
+    let onSubmitSignIn = (e) => {
+        e.preventDefault();
         fetch('https://smart-dragon-server.onrender.com/signin', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
@@ -23,10 +30,8 @@ function SignIn({onRouteChange, loadUser}) {
         .then(user => {
             if(user.id ){
                 loadUser(user)
-                onRouteChange('home')
                 window.localStorage.setItem('user', JSON.stringify(user))
-                window.localStorage.setItem('TYPE_OF_RANK', JSON.stringify(user.rank))
-                fetch("http://localhost:3000/rank",{
+                fetch("https://smart-dragon-server.onrender.com/rank",{
                     method: "put",
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify({
@@ -35,11 +40,13 @@ function SignIn({onRouteChange, loadUser}) {
                     })
                 })
             }
-        
+            navigate('/');
         })
     }
 
   return (
+    <>
+    {/* <NavigationLoggedOut /> */}
     <article style={{marginTop: '8rem'}} className="br2  ba dark-gray b--black-10 mv4 w-100 w-75-m w-25-l mw6 shadow-5 center">
         <main className="pa4 black-80 tc signin-component">
             <div className="measure w-100 center">
@@ -58,28 +65,33 @@ function SignIn({onRouteChange, loadUser}) {
                     className="b br3 b--near-black mb0 pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="password" name="password"  id="password"/>
                 </div>
                 </fieldset>
-                <div className="" style={{display: 'flex'}}>
-                <input
+                <div className="signin" style={{display: 'flex'}}>
+                <button
 
                 style={{flexBasis: '50%', marginInline: 'auto'}}
                  className="b br2 ph4 pv2 input-reset  ba b--black bg-transparent grow pointer f4 dib" 
-                 type="submit" value="Sign in"
-                 onClick={onSubmitSignIn}
-                 />
+                 type="submit" 
+                 onClick={(e) => onSubmitSignIn(e)}
+                 >                    <Link to="/signin">Sign In</Link>
+                 </button>
                 </div>
-                <div className="lh-copy mt3 flex-ns"
+                <div className="lh-copy mt3 flex-ns register"
                 >
-                <p 
+                <button
                 style={{flexBasis: '30%', marginInline: 'auto'}}
                 
-                onClick={() => onRouteChange('register')}
-                 className="f4 mb0 b pointer link dim black pv1 ph3">Register</p>
+                    onClick={()=> {}}
+                 className=" br2 ph4 pv2  ba  bg-transparent grow pointer f4 dib">
+                    <Link to="/register">Register</Link>
+                    </button>
                 
                 </div>
             </div>
         </main>
-
+    
     </article>
+    </>
+
   )
 }
 

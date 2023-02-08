@@ -1,7 +1,7 @@
 .Tilt {
     box-shadow: 0 0 15px 10px  hsl(186, 100%, 52%)
 }
-.rank-text p {
+.rank-text a {
      color: hsl(186, 100%, 52%)
 
 }

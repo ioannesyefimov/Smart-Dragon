@@ -1,4 +1,24 @@
-.signin-component input {
+
+.signin-component{
+
 }
-.signin-component:last-child{
+.signin-component button {
+    background: transparent;
+    
+}
+.register button {
+    border: none;
+
+}
+
+button > * {
+    text-decoration: none;
+    color: black;
+
+}
+.signin-component button > :hover{
+    color: gold;
+    font-weight: 700;
+    transition: .3s ease-out;
+
 }

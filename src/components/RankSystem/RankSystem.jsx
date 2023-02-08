@@ -8,7 +8,7 @@ function RankSystem() {
         <h1>Rank System by entries count:</h1>
         <div className='ranks-container'>
           {ranks.map((rankName, i) => {
-            return <p key={rankName} className={`${rankName}`}>{rankName} </p>
+            return <p key={rankName} className={`${rankName} grow pointer`}>{rankName} </p>
           })}
           
 

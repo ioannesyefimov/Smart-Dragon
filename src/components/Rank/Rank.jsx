@@ -1,20 +1,20 @@
 import React from 'react'
 import './Rank.css'
-function Rank({name, entries,  onRouteChange}) {
+
+import { Link } from 'react-router-dom'
+function Rank({name, entries}) {
   return (
     <div className='rank-component '>
       <div
       className='rank-text '
       >
-        <p 
-        onClick={()=> onRouteChange('profile')}
-        className={`name `}>{name}</p> <span>your current entry count is...</span>
-      </div>
-      <div
-      className={`rank-number `}
-      onClick={()=> onRouteChange('profile')}
-      >
+        <Link to="/profile">
+          {name}
+        </Link>
+        <span>your current entry count is...</span>
+        <Link to="/profile">
         {entries}
+        </Link>     
       </div>
     </div>
   )

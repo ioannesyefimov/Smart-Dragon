@@ -1,11 +1,9 @@
 .navigation-component {
     /* position: absolute; */
-    top: 0px;
-    left: 90%;
     display: flex;
+
     font-size: 1.5rem;
     letter-spacing: .1rem;
-    /* padding: 1; */
 }
 
 .navigation {
@@ -16,18 +14,21 @@
     font-size: 1.7rem;
     cursor: pointer;
     margin-top: 2rem;
+    color: white;
 
-    color: rgb(13, 10, 41);
 }
 
-.navigation-home {
+.navigation-home ul {
     margin-inline: 5rem;
+    margin-block: 1rem;
+
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.navigation-sign_register {
+
+.navigation-logged-out ul { 
     display: flex;
     margin-inline: 5rem;
     justify-content: flex-end;
@@ -41,16 +42,22 @@
     position: absolute;
     top: 5%;
 }
-.navigation-profile .wrapper{
+.navigation-profile ul{
     grid-column: 1/-1;
     grid-row: 1/2;
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
     gap:2rem;
+    margin-block: 1rem;
+
 }
-.navigation p:hover{
-    text-decoration: underline;
+ul li > * {
+    color: white;
+    text-decoration: none;
+}
+.navigation ul li >  :hover{
+    text-decoration:underline;
     color: gold;
 }
 .profile {

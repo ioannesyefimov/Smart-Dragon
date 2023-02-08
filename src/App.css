@@ -1,5 +1,5 @@
 .App {
- height: 100vh;
+ /* height: 100vh; */
  display: flex;
  flex-direction: column;
 }
@@ -7,3 +7,10 @@
 }
 .home-component {
 }
+.particles-bg{
+    height: 100vh;
+}
+.particles-bg-canvas-self{
+    
+    background: #ffffff00;
+  }

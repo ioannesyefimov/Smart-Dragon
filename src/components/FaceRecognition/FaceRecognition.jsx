@@ -1,14 +1,19 @@
 import React from 'react'
 import './FaceRecognition.css'
 import errorImage from './error-img.png'
+import { useClarifai } from '../ClarifaiProvider/ClarifaiProvider'
+import { useAuth } from '../userContext/userContext'
 
-function FaceRecognition({imageUrl, box,error}) {
+function FaceRecognition() {
+  const {imageUrl, box} = useAuth()
+  const {hasError} = useClarifai()
+
   return (
     <div
     className='face-recognition-component'
     >
       <div className=' mt2 face-inner-div' style={{}}>
-        <img id="inputimage" src={error ? errorImage : imageUrl} alt=''  style={{marginTop: '1rem'}} />
+        <img id="inputimage" src={hasError ? errorImage : imageUrl} alt=''  style={{marginTop: '1rem'}} />
         {box.map((item,i) => {
           return  <div
           key={i}

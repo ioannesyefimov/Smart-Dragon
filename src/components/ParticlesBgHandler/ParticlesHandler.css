@@ -1,0 +1,36 @@
+.particles-handler {
+    display: grid;
+    width: 60%;
+    margin: 0 auto;
+gap:1.2rem
+}
+.particles-handler .buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap:1.5rem;
+}
+.particles-handler .buttons > * {
+    flex: 1 1 15%
+}
+.particles-handler button {
+    background: transparent;
+    border: none;
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.401);
+    color: inherit;
+    padding: 0 2rem;
+    font-size:2.5rem;
+}
+.hide-btn{
+}
+.bg-pattern-btn{
+    background: transparent;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.401);
+    border: none;
+    margin-inline: auto;
+    font-size: 2.5rem;
+}
