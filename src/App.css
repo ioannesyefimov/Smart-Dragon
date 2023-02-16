@@ -5,15 +5,17 @@
 }
 .log{
 }
+
 .home-component {
 }
 .particles-bg-canvas-self{
     position: fixed !important;
     height: 100vh;
+    background: #ffffff00 !important; 
+
 }
 .particles-bg-canvas-self{
     
-    background: #ffffff00;
   }
 
 .notfound404 {

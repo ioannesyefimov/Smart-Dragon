@@ -29,7 +29,16 @@ export const App = () => {
   return (
     <div className="App ">
       <RankThemeSelector >
-          <ParticlesBg  color="" num={100}  type={particlesBg} bg={true} />
+          <ParticlesBg color={[`#ff77aa, #aaff77, #77aaff,#000000`]}  num={100}  type={particlesBg} bg={{
+            position: "absolute",
+            opacity: '0.55',
+            zIndex: -1,
+            top: 0,
+            left: 0,
+            color:{
+              value: '#00eeeeee'
+            }
+          }} />
           <AppRoutes setBG={setBG}/>
       </RankThemeSelector>
     </div>

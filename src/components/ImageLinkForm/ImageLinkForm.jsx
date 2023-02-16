@@ -20,10 +20,10 @@ function ImageLinkForm({ }) {
         </p>
         <div className='input-container ' >
             <div className='center  form pa4 br3 shadow-5'>
-                <input onChange={(e) => onInputChange(e)} className='f3 pa1 w-70 center' type='text'/>
+                <input onChange={(e) => onInputChange(e)} className='f3 pa0 w-70 center' type='text'/>
                 <button 
                 onClick={(e) => onImageSubmit()}
-                className='w-30 grow f4 link ph3 pv2 dib white bg-light-purple'>Detect</button>
+                className='w-30 grow f5 link pa0 ph3 pv1 dib white bg-light-purple'>Detect</button>
             </div>
         </div>
     </div>
