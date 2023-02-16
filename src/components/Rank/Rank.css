@@ -2,6 +2,7 @@
     display: grid;
     margin: 0 auto;
     text-align: center;
+    padding-inline: 2rem;
 
 }
 .rank-text {
