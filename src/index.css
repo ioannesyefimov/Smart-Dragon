@@ -17,3 +17,17 @@ body {
 button {
     cursor: pointer;
 }
+
+a {
+    text-decoration: none;
+    color:white
+}
+
+a::hover{
+    text-decoration:underline;
+    color: gold;
+}
+.hover-element:hover{
+    text-decoration:underline ;
+    color: gold ;
+}

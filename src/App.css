@@ -1,5 +1,5 @@
 .App {
- /* height: 100vh; */
+ height: 100vh;
  display: flex;
  flex-direction: column;
 }
@@ -7,10 +7,21 @@
 }
 .home-component {
 }
-.particles-bg{
+.particles-bg-canvas-self{
+    position: fixed !important;
     height: 100vh;
 }
 .particles-bg-canvas-self{
     
     background: #ffffff00;
   }
+
+.notfound404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 3vw;
+    flex-direction: column;
+    color: rgb(255, 255, 255)
+}

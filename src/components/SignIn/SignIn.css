@@ -1,10 +1,16 @@
 
 .signin-component{
+    color: white;
 
 }
 .signin-component button {
     background: transparent;
+    border: 1px solid white;
+
     
+}
+.signin-component input {
+    border: 1px solid white;
 }
 .register button {
     border: none;
@@ -21,4 +27,13 @@ button > * {
     font-weight: 700;
     transition: .3s ease-out;
 
+}
+
+.error-signin {
+    color: rgb(255, 255, 255); 
+    filter: drop-shadow(0 0 5px red);
+    text-transform: uppercase;
+    font-weight: 700;
+
+    font-size: 1.25rem;
 }

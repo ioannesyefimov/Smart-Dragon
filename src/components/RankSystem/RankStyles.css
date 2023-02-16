@@ -2,11 +2,18 @@
     color: hsla(160, 97%, 54%, 1) !important
     
 }
+.newbie-P {
+    color: hsla(160, 97%, 54%, 1) !important
+    
+}
 .newbie::after {
     content: '0-9';
 
 }
 .junior {
+    color: hsl(186, 100%, 52%) !important
+}
+.junior-P {
     color: hsl(186, 100%, 52%) !important
 }
 .junior::after {
@@ -16,11 +23,18 @@
 .professor {
     color : hsl(226, 100%, 50%) !important
 }
+.professor-P {
+    color : hsl(226, 100%, 50%) !important
+}
+
 .professor::after {
     content: '20-39';
 
 }
 .chancellor {
+    color: hsl(266, 100%, 50%) !important
+}
+.chancellor-P {
     color: hsl(266, 100%, 50%) !important
 }
 .chancellor::after {
@@ -30,11 +44,17 @@
 .vizier {
     color: hsl(305, 100%, 50%) !important
 }
+.vizier-P {
+    color: hsl(305, 100%, 50%) !important
+}
 .vizier::after {
     content: '60-99';
 
 }
 .emperor {
+    color: hsl(0, 100%, 50%) !important
+}
+.emperor-P {
     color: hsl(0, 100%, 50%) !important
 }
 .emperor::after {

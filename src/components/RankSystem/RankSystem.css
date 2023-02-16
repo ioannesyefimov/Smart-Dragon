@@ -1,11 +1,23 @@
 .rank-system-component {
- display: grid;
+width: 50%;
+margin: 8rem auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
  text-transform: uppercase;
 font-weight: 700;
 box-shadow: 0 0 5px 0px rgba(255, 255, 255, 0.518);
 padding-inline: 2rem;
 
 font-family: 'Oswald', sans-serif;
+}
+@media (max-width: 650px){
+    .rank-system-component {
+
+       margin: 10rem auto;
+       
+       }
 }
 .rank-system-component h1 {
     color: white;
@@ -20,8 +32,10 @@ font-family: 'Oswald', sans-serif;
     font-weight: 700;
 }
 .ranks-container {
+    align-self: stretch;
+    text-align: center;
     display:grid;
-grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 }
 .ranks-container > * {
     flex-grow: 1;

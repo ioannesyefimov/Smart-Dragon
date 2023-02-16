@@ -1,0 +1,31 @@
+.profile-settings {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 10rem 0;
+    gap:2rem;
+    line-height: 0;
+    /* margin: 8rem auto; */
+
+
+ 
+}
+
+.profile-settings > * {
+    flex-grow: 1;
+
+}
+.profile-settings .acc-handler, .bg-handler {
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.401);
+    padding: 3rem;    
+    
+   
+}
+.bg-pattern-btn, .manage-acc-btn{
+
+    /* padding: 2.5rem; */
+
+}
+.profile-settings button {
+    font-size: 1.5rem;
+}

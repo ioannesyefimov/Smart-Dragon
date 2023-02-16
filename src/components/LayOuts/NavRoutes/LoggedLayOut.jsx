@@ -1,27 +1,25 @@
 import React from 'react'
 import { Link,Outlet } from 'react-router-dom'
-import { useAuth } from '../userContext/userContext'
-function LoggedLayOut() {
+import { useAuth } from '../../userContext/userContext'
+function LoggedLayOut({}) {
   const {logout} = useAuth()
   return (
     <nav className='navigation navigation-home'>
        <ul>
-        <li  className="navigation-component  "
+        <li  className="navigation-component  hover-element "
       
         >
-          <Link to='/profile'>Profile</Link>
+          <Link to='/profile' replace>Profile</Link>
         </li>
         <li 
           onClick={() =>{
             window.localStorage.removeItem('user')
             logout()
         }}
-        className="navigation-component  ">
-          Sign Out
+        className="navigation-component hover-element  ">
+          <Link to='/signin' replace>Sign Out</Link>
         </li>
        </ul>
-       <Outlet/>
-    
      
       </nav>
   )

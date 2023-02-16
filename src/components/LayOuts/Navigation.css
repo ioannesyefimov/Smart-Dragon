@@ -56,9 +56,5 @@ ul li > * {
     color: white;
     text-decoration: none;
 }
-.navigation ul li >  :hover{
-    text-decoration:underline;
-    color: gold;
-}
 .profile {
 }

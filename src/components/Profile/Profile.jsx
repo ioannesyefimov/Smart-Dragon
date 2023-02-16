@@ -1,40 +1,36 @@
 import React, {useState} from 'react'
+import { Link } from 'react-router-dom'
 import './Profile.css'
 import RankSystem from '../RankSystem/RankSystem'
-import ParticlesBgHandler from '../ParticlesBgHandler/ParticlesBgHandler'
+import ProfileSettings from './ProfileSettings/ProfileSettings'
 import { useAuth } from '../userContext/userContext'
 
 
 function Profile({setBG}) {
     const {user} = useAuth()
-    const {name, rank} = user
+    const {username, rank} = user
 
-    const [isShowedRankSystem, setIsShowedRankSystem] = useState(false)
-    const [isToggledBgHandler, setIsToggledBgHandler] = useState(false)
       return (
         <div className='profile-container'>
 
             <div className='profile-component'>
-            <div className='profile-user'>
-                <span className=''>Welcome </span> 
-                <span className='profile-name'>{name}</span>   
+                <div className='user-info-wrapper'>
+                    <div className='profile-user'>
+                        <span className=''>Welcome </span> 
+                        <span className='profile-name'>{username}</span>   
+                    </div>
+                    <div
+                        className='profile-rank'
+                    >
+                        <span className='rank-text'>Your current rank is: </span>
+                        <span className='rank'>{rank}</span>
+                </div>
             </div>
-            <div
-                className='profile-rank'
-            >
-                <span className='rank-text'>Your current rank is: </span>
-                <span className='rank'>{rank}</span>
+        
+            <div className='profile-settings-wrapper'>
+                <Link to='/profile/settings' replace>Settings</Link>
+                <Link to='/profile/rank-system' replace>Rank System</Link>
             </div>
-
-            {isShowedRankSystem ? (<div  className="rank-system-container">
-                    <RankSystem setIsShowedRankSystem={setIsShowedRankSystem} />
-                    <button className='profile-btn' onClick={(e) => setIsShowedRankSystem(false)}>hide</button>
-                </div>) : (<button
-                className='profile-btn'
-                onClick={(e) => setIsShowedRankSystem(true)}>
-                    Rank System
-                </button>)}
-                {isToggledBgHandler? (<ParticlesBgHandler setBG={setBG}  setIsToggledBgHandler={setIsToggledBgHandler}/>) : (<button className='bg-pattern-btn' onClick={()=> setIsToggledBgHandler(true)}>BG Pattern</button>)}
             
         </div>
         

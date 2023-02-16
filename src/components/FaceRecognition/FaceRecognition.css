@@ -18,12 +18,14 @@
     margin-bottom: 3rem;
 }
 .face-inner-div {
+
     margin: 0 auto;
     position: relative;
     
 }
 
 .face-inner-div img {
+    
     box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.472);
     margin-top: 0;
     /* border: 1px black solid; */
@@ -32,4 +34,13 @@
     width: 450px;
     height: auto;
 
+}
+.loading{
+ position: absolute;   
+ inset: 0;
+ box-shadow: none !important;
+ width: 100%;
+ height: 100%;
+ transform: scale(.8);
+ z-index: 5;
 }

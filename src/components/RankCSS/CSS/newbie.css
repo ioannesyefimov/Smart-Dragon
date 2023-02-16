@@ -23,3 +23,12 @@
     background: radial-gradient(circle, transparent 20%, hsla(160, 97%, 54%, 0.5) 20%, hsla(160, 97%, 54%, 0.5) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, hsla(160, 97%, 54%, 0.5) 20%, hsla(160, 97%, 54%, 0.5) 80%, transparent 80%, transparent) 12.5px 12.5px, linear-gradient(#000000 1px, transparent 1px) 0 -0.5px, linear-gradient(90deg, #000000 1px, hsla(160, 97%, 54%, 0.5) 1px) -0.5px 0;
     background-size: 25px 25px, 25px 25px, 12.5px 12.5px, 12.5px 12.5px;
 }
+.btn:hover{
+    box-shadow: 0 0 15px 1px hsla(160, 97%, 54%, 1)!important ;
+    color: hsla(160, 97%, 54%, 1) !important
+
+}
+.form_wrapper span {
+    
+    color: hsla(160, 97%, 54%, 1);
+}

@@ -1,0 +1,72 @@
+.manage-account-component{
+}
+.change-component {
+    width: 400px;
+}
+.change-component .delete-btn {
+    position: relative;
+}
+
+.change-form {
+    display: grid;
+    gap:2rem;
+}
+.form_wrapper input {
+    padding: .5rem .5rem;
+    border: black ;
+    box-shadow: 0 0 2px 1px rgb(255, 255, 255);
+    color:white;
+    background: transparent;
+}
+.form_wrapper input::placeholder {
+    color:white;
+}
+.form_wrapper span {
+    font-size: 1.35rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+}
+.form_wrapper label {
+    display: flex;
+    flex-direction: column;
+    gap:1.25rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+.type-input {
+    text-transform: capitalize;
+}
+
+input[type='checkbox'] {
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    background: #fff;
+    padding: 0.8rem 2rem;
+    margin: 0;
+    border: none;
+    border-radius: 20px;
+}
+input[type='checkbox']::after {
+    transition: .3s all ease-in-out;
+
+    top:10%;
+    left: 5%;
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+}
+input[type='checkbox']:checked::after {
+    top:10%;
+    left: 60%;
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 34);
+}

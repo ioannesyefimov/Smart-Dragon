@@ -24,3 +24,10 @@
       background: radial-gradient(circle, transparent 20%, hsl(0, 100%, 50%,0.5) 20%, hsl(0, 100%, 50%,0.5) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, hsl(0, 100%, 50%,0.5) 20%, hsl(0, 100%, 50%,0.5) 80%, transparent 80%, transparent) 12.5px 12.5px, linear-gradient(#000000 1px, transparent 1px) 0 -0.5px, linear-gradient(90deg, #000000 1px, hsl(0, 100%, 50%,0.5) 1px) -0.5px 0;
       background-size: 25px 25px, 25px 25px, 12.5px 12.5px, 12.5px 12.5px;
 }
+.btn:hover {
+      box-shadow: 0 0 10px 1px hsl(0, 100%, 50%);
+      color:hsl(0, 100%, 50%);
+}
+.form_wrapper span {
+    
+      color:hsl(0, 100%, 50%);  }

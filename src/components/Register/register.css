@@ -1,0 +1,28 @@
+.register-form .wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+.register-form{
+    position: relative
+
+}
+.register-form .wrapper .password-hint:hover .info-text{
+    display: block;
+}
+.password-hint button {
+    border-radius: 25%;
+    border: none;
+    font-size: 1rem;
+}
+.info-text {
+    display: none;
+    position: absolute;
+    font-size: 1.25rem;
+    width: 100%;
+    /* max-width: 50ch; */
+    left: 0;
+    bottom: -45%;
+    color: white;
+}

@@ -28,6 +28,11 @@ export function AuthProvider({children}) {
     
     
       }, [])
+
+      useEffect(()=>{
+        window.localStorage.setItem('user', JSON.stringify(user))
+
+      }, [user.rank])
   
   
       useEffect(()=> {
@@ -35,11 +40,11 @@ export function AuthProvider({children}) {
         setBox([{}])
         window.localStorage.setItem('user', JSON.stringify(user))
     
-      }, [user.id])
+      }, [ user.id ])
     const loadUser = (data) => {
       setUser({
           id: data.id,
-          name: data.name,
+          username: data.username,
           email: data.email,
           entries: data.entries,
           joined: data.joined,

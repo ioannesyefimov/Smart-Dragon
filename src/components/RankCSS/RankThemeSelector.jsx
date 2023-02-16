@@ -6,10 +6,10 @@ import { useAuth } from '../userContext/userContext'
 
 
 export const RankThemeSelector = ({children}) => {
-  const {user,} = useAuth()
+  const {user} = useAuth()
  
   const [rank, setRank] = useState(user.rank)
- /* @vite-ignore */  let RankCss  = React.lazy(()=> import(`./${rank}.jsx`))
+ /* @vite-ignore */  let RankCss  = /* @vite-ignore */React.lazy(()=> import( /* @vite-ignore */ `./${rank}.jsx`))
   
  
 

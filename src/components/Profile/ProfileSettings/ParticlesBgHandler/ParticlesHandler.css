@@ -1,0 +1,35 @@
+
+.manage-particles-component .buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap:1.5rem;
+}
+.manage-particles-component .buttons > * {
+    flex: 1 1 25%
+}
+.manage-particles-component .buttons button {
+    background: transparent;
+    border: none;
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.401);
+    color: white    ;
+    padding: .4rem 1rem;
+}
+
+.bg-pattern-btn{
+    background: transparent;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+.manage-particles-component {
+    max-width: 45rem;
+    margin: 0 auto;
+gap:1.2rem
+}
+.manage-particles-component .buttons .hide-btn{
+    color: gold !important;
+
+}

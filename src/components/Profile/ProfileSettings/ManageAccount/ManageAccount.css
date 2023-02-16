@@ -1,0 +1,70 @@
+.acc-handler {
+    position: relative;
+    transition: 0.3s all ease-in-out;
+    display: flex;
+    gap:2rem;
+}
+
+.acc-handler .wrapper {
+    height: 15rem;
+        display: flex;
+    align-items: start;
+    justify-content: space-around;
+}
+.acc-handler .wrapper > *{
+    /* flex-basis: 15%; */
+}
+.acc-handler button {
+
+    background: transparent;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    border: none;
+    background: transparent;
+}
+.change-btn{
+    padding: .7rem;
+    max-width: 10rem;
+
+}
+.acc-handler .hide-btn, .back-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.acc-handler .delete-btn{
+    position: absolute !important;
+    bottom: 0;
+    left: 0;
+}
+.acc-handler .delete-btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+.acc-handler .delete-btn:focus {
+    text-transform: uppercase;
+    color: white !important;
+    box-shadow:0px 0px 10px 2px red !important;
+    font-weight: 700;
+    outline: 1px solid red !important;
+}
+.acc-handler .delete-btn:focus::before, .delete-btn:focus::after {
+    transform: scale(.5);
+    content: url('./381599_error_icon.svg');
+}
+.acc-handler .delete-btn:focus:hover  {
+    text-decoration: line-through;
+ color: red;
+}
+
+.change-btn {
+    padding: .6rem;
+
+  
+}

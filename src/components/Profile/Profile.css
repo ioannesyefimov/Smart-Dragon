@@ -1,25 +1,35 @@
+
+.profile-container {
+  display: grid;
+  margin-top: 12rem;
+
+}
 .profile-component{
   gap:5rem;
-  margin-top: 0rem;
   color: white;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  margin-inline: 5rem;
+  align-items: center;
   font-size: 2.5rem;
   text-align: center;
 
 }
-.profile-component > * {
+.user-info-wrapper{
+  display:grid;
+  gap:1.5rem;
 }
+
 
 .profile-user {
   display: flex;
 justify-content: center;
   align-items: center;
-  gap: 1.9rem;
-    margin-top: 4rem;
+  gap: 1.5rem;
 }
 @media (max-width: 500px){
   .profile-user {
-    margin-top: 8rem;
+    /* margin-top: 8rem; */
 
   }
 }
@@ -31,14 +41,13 @@ justify-content: center;
   justify-content: center;
   flex-wrap: wrap;
   gap:2rem;
-  font-size: 2.5rem;
-  line-height: 0;
 
 }
 
 .profile-name {
     text-align: center;
     line-height: 0;
+    text-transform: capitalize;
     font-family: 'Oswald', sans-serif;
 
 }
@@ -48,12 +57,10 @@ justify-content: center;
     text-transform: uppercase;
     font-weight: 500;
     font-family: 'Oswald', sans-serif;
+    
 }
 
-.profile-rank-system{
-  display: grid;
-  justify-content: center;
-}
+
 .profile-btn {
   background: transparent;
   text-transform: uppercase;
@@ -64,10 +71,21 @@ justify-content: center;
   border: none;
   margin-inline: auto;
 }
-.rank-system-container {
+/* .rank-system-container {
   display: grid;
   gap:2rem;
   align-self: flex-start;
   width: 80%;
   margin: 0 auto;
+} */
+
+.profile-settings-wrapper{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.237);
+  gap:2rem;
+}
+.profile-settings-wrapper a {
+  text-decoration: none;
 }

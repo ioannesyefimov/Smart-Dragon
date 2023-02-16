@@ -12,6 +12,7 @@ export function ClarifaiProvider({children}){
     const [input, setInput] = useState('')
    
     const [hasErorr, setHasError] = useState(false)
+    const [isLoading, setIsLoading] = useState('loading')
 
     const {setImageUrl, setBox, user, setUser} = useAuth()
     
@@ -54,6 +55,7 @@ export function ClarifaiProvider({children}){
     }
     const onImageSubmit = () => {
         if(input.length > 0){
+            setIsLoading('loading')
             setHasError(false)
     
             setImageUrl(input)
@@ -77,13 +79,28 @@ export function ClarifaiProvider({children}){
             .then(response => response.json())
             .then(count => {
                 setUser(Object.assign(user, { entries: count}))
-                
-            })
+                fetch('https://smart-dragon-server.onrender.com/rank', {
+                    method: 'put',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        email: user.email,
+                        entries: count
+                    })
+                  })
+                  .then(response=>response.json())
+                  .then(updatedRank=> {
+                    console.log(updatedRank)
+                    setUser({...user, rank: updatedRank.rank})
+                })
+                .catch(err=>console.log(err))
+        })
             .catch(console.log)
             }
                 displayFaceBox(calculateFaceLocation(response))
+                setIsLoading('')
             })
             .catch(err => console.log(err));
+          
         } else if 
             (input.length <= 0){
                 setHasError(true)
@@ -95,18 +112,16 @@ export function ClarifaiProvider({children}){
         ()=> ({
             input,
             hasErorr,
+            isLoading,
             onImageSubmit,
             setInput,
-            setHasError
-        }), [input]
+            setHasError,
+            setIsLoading,
+        }), [input,isLoading,hasErorr]
     )
     
     return (
-        <ClarifaiDataContext.Provider value={{input,
-            hasErorr,
-            onImageSubmit,
-            setInput,
-            setHasError}}>
+        <ClarifaiDataContext.Provider value={value}>
             { children }
         </ClarifaiDataContext.Provider>
     )

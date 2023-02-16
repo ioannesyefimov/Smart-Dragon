@@ -1,0 +1,65 @@
+
+.alert-div {
+    
+    z-index: 2;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    font-size: 1.25rem;
+
+    text-align: center;
+    /* background-color:  rgba(255, 255, 255, 0.065); */
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.548);
+    /* width: 100%; */
+    padding: 0 2rem;
+    /* width: 5rem; */
+    border-radius: 10px;
+}
+
+.alert-div p {
+    border-radius: 10px;
+    font-size: 1.45rem;
+    align-self: flex-start;
+
+}
+
+.alert-div .wrapper{
+    display: flex;
+    /* justify-content: space-around; */
+    text-align: center;
+
+
+}
+.alert-div .wrapper button, a{
+    background: transparent;
+
+    border: none;
+    font-family: inherit;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.alert-div .wrapper button:hover, a:hover{
+    text-decoration:underline;
+    color: gold;
+}
+
+.alert-div .signin-error {
+}
+.change-success{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    gap:2rem;
+    color: inherit;
+}
+
+
+.change-success .continue-btn{
+    color:black ;
+    margin-top: 2rem;
+    
+}

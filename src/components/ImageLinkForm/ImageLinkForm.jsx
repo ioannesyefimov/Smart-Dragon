@@ -3,7 +3,6 @@ import './ImageLinkForm.css'
 
 import { useClarifai } from '../ClarifaiProvider/ClarifaiProvider'
 import { useAuth } from '../userContext/userContext'
-
 function ImageLinkForm({ }) {
   const {onImageSubmit,setInput, setHasError} = useClarifai()
 
@@ -25,7 +24,6 @@ function ImageLinkForm({ }) {
                 <button 
                 onClick={(e) => onImageSubmit()}
                 className='w-30 grow f4 link ph3 pv2 dib white bg-light-purple'>Detect</button>
-
             </div>
         </div>
     </div>
