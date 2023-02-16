@@ -6,9 +6,11 @@
 }
 
 .acc-handler .wrapper {
-    height: 15rem;
+    min-height: 15rem;
         display: flex;
     align-items: start;
+    flex-wrap: wrap;
+
     justify-content: space-around;
 }
 .acc-handler .wrapper > *{

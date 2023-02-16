@@ -16,7 +16,7 @@ function FaceRecognition() {
     >
  
       <div className=' mt2 face-inner-div' style={{}}>
-        <img id="inputimage" src={hasError ? errorImage : imageUrl} alt=''  style={{marginTop: '1rem'}} />
+        <img id="inputimage" src={hasError ? errorImage : imageUrl} alt=''  style={{marginTop: '0rem'}} />
         {isLoading == 'loading' ? (
           <img  className='loading' src={loading} alt='loading'/>
         ):(<></>)}

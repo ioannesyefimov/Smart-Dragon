@@ -7,7 +7,7 @@
 
     display: flex;
     justify-content: center;
-    width: clamp(8.75rem, 8.17rem + 2.477vw, 11.25rem);
+    width: clamp(5rem, 2.887rem + 9.014vw, 11rem);
     border-radius: 50%;
    
 }

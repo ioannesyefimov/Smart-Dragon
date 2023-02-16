@@ -27,6 +27,8 @@
 .btn:hover {
      color: hsl(305, 100%, 50%) !important;
      box-shadow: 0 0 15px 1px hsl(305, 100%, 50%) !important;
+     border-radius: 20px;
+
 }
 .form_wrapper span {
     

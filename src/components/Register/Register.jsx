@@ -150,16 +150,16 @@ function Register() {
             <main className="pa4 black-80 tc " >
             <form className="measure w-100 center ">
                 <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-                <legend className="f2 fw6 ph0 mh0">Register</legend>
+                <legend className="f3 fw6 ph0 mh0">Register</legend>
                 <div className="mt3">
-                    <label className="db  fw6 lh-copy f4" htmlFor="name" >Username</label>
+                    <label className="db  fw6 lh-copy f5" htmlFor="name" >Username</label>
                     <input ref={userNameRef}
                     onChange={(e)=> onNameChange(e)}
                     
                     className="pa2 br3 input-reset ba b--near-black bg-transparent hover-bg-black hover-white w-100" type="text" name="email-address"  id="name"/>
                 </div>
                 <div className="mt3">
-                    <label className="db  fw6 lh-copy f4" htmlFor="email-address" >Email</label>
+                    <label className="db  fw6 lh-copy f5" htmlFor="email-address" >Email</label>
                     <input ref={emailRef}
                     onChange={(e)=> onEmailChange(e)}
                     
@@ -167,7 +167,7 @@ function Register() {
                 </div>
                 <div className="mv3">
                     <div className='wrapper'>
-                        <label className="db fw6 lh-copy f4" htmlFor="password" >Password</label>
+                        <label className="db fw6 lh-copy f5" htmlFor="password" >Password</label>
                         <div className='password-hint'>
                             <button onClick={(e)=> e.preventDefault()}>?</button>
                             <p className='info-text'>{Errors.INVALID_PASSWORD}</p>
@@ -182,7 +182,7 @@ function Register() {
                 </fieldset>
                 <div className="">
                 <input
-                 className="b br3 ph3 pv2 input-reset ba b--black bg-transparent grow pointer f4 dib" 
+                 className="b br3 ph3 pv2 input-reset ba b--black bg-transparent grow pointer f5 dib" 
                  type="submit" value="Register"
                  onClick={(e) => onSubmitSignIn(e)}
                  />

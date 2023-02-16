@@ -61,15 +61,8 @@ function SignIn() {
             if(user.id ){
                 setFormError('')
                 loadUser(user)
-                window.localStorage.setItem('user', JSON.stringify(user))
-                // fetch("https://smart-dragon-server.onrender.com/rank",{
-                //     method: "put",
-                //     headers: {'Content-Type': 'application/json'},
-                //     body: JSON.stringify({
-                //         email: user.email,
-                //         entries: user.entries
-                //     })
-                // })
+
+
                 fetch("https://smart-dragon-server.onrender.com/rank",{
                     method: "put",
                     headers: {'Content-Type': 'application/json'},
@@ -79,10 +72,10 @@ function SignIn() {
                     })
                 })
                 navigate('/');
-                setFormError('')
-            } else if (user.includes('such user doesn\'t exist')){
+
+            } else if (user == 'such user doesn\'t exist'){
                 setFormError(user)
-            } else if (user.includes('wrong password')){
+            } else if (user == 'wrong password'){
                 setFormError(user)
             }
         })
@@ -95,16 +88,16 @@ function SignIn() {
        
             <div className="measure w-100 center">
                 <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-                <legend className="f2 fw6 ph0 mh0">Sign In</legend>
+                <legend className="f3 fw6 ph0 mh0">Sign In</legend>
                 <div className="mt3">
-                    <label className="db  fw6 lh-copy f4" htmlFor="email-address">Email</label>
+                    <label className="db  fw6 lh-copy f5" htmlFor="email-address">Email</label>
                     <input  ref={emailRef}
                     onChange={(e)=> onEmailChange(e)}
                     className="pa2 br3 input-reset ba b--near-black bg-transparent hover-bg-black hover-white w-100" type="email" name="email-address"  id="email-address"/>
                     {formError == 'such user doesn\'t exist' ? <div className='error-signin'>{formError}</div> : formError == 'incorrect email address' ? <div className='error-signin'>{formError}</div> : null}
                 </div>
                 <div className="mv3">
-                    <label className="db fw6 lh-copy f4" htmlFor="password">Password</label>
+                    <label className="db fw6 lh-copy f5" htmlFor="password">Password</label>
                     <input ref={passwordRef}
                     onChange={(e)=> onPasswordChange(e)}
                     className="b br3 b--near-black mb0 pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="password" name="password"  id="password"/>
@@ -116,7 +109,7 @@ function SignIn() {
                 <button
 
                 style={{flexBasis: '50%', marginInline: 'auto'}}
-                    className="b br2 ph4 pv2 input-reset  ba b--black bg-transparent grow pointer f4 dib" 
+                    className="b br2 ph4 pv2 input-reset  ba b--black bg-transparent grow pointer f5 dib" 
                     type="submit" 
                     onClick={(e) => onSubmitSignIn(e)}
                     >                    <Link to="/signin">Sign In</Link>
@@ -129,7 +122,7 @@ function SignIn() {
                 style={{flexBasis: '30%', marginInline: 'auto'}}
                 
                     onClick={()=> {}}
-                    className=" br2 ph4 pv2  ba  bg-transparent grow pointer f4 dib">
+                    className=" br2 ph4 pv2  ba  bg-transparent grow pointer f5 dib">
                     <Link to="/register">Register</Link>
                     </button>
                 

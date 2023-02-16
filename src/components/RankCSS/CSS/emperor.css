@@ -26,6 +26,8 @@
 }
 .btn:hover {
       box-shadow: 0 0 10px 1px hsl(0, 100%, 50%);
+      border-radius: 20px;
+
       color:hsl(0, 100%, 50%);
 }
 .form_wrapper span {

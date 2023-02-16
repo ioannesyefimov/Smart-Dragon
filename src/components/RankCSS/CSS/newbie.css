@@ -25,6 +25,8 @@
 }
 .btn:hover{
     box-shadow: 0 0 15px 1px hsla(160, 97%, 54%, 1)!important ;
+    border-radius: 20px;
+
     color: hsla(160, 97%, 54%, 1) !important
 
 }

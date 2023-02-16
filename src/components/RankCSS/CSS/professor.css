@@ -26,7 +26,8 @@
     background-size: 25px 25px, 25px 25px, 12.5px 12.5px, 12.5px 12.5px;
 }
 .btn:hover{
-    box-shadow: 0 0 15px 1px hsla(160, 97%, 54%, 1)!important ;
+    box-shadow: 0 0 15px 1px hsl(226, 100%, 50%) !important;
+    border-radius: 20px;
     color: hsl(226, 100%, 50%) !important;
 }
 .form_wrapper span {

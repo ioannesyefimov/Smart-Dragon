@@ -16,13 +16,10 @@ export function AuthProvider({children}) {
 
 
     useEffect(()=> {
-      if(typeof(window.localStorage.getItem('user') !== 'object')) {
-        return
-      }
-        const LoggedUser = localStorage.getItem('user')
-        
-        if(LoggedUser && LoggedUser.id){
-          setUser(LoggedUser)
+        const LoggedUser = window.localStorage.getItem('user')
+        console.log(typeof LoggedUser)
+        if(LoggedUser){
+          setUser(JSON.parse(LoggedUser))
           // setRoute('home')
           // set rank in local storage to apply css
     
