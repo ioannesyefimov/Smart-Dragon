@@ -5,16 +5,14 @@
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     color:white;
     font-size: 1.25rem;
 
     text-align: center;
-    /* background-color:  rgba(255, 255, 255, 0.065); */
     box-shadow: 0 0 1px rgba(255, 255, 255, 0.548);
     /* width: 100%; */
-    padding: 0 2rem;
+    padding: 2rem 2rem;
     /* width: 5rem; */
     border-radius: 10px;
 }
@@ -33,17 +31,23 @@
 
 
 }
+.alert-div .wrapper button a{
+    color:rgb(0, 0, 0);
+
+}
 .alert-div .wrapper button, a{
     background: transparent;
 
     border: none;
     font-family: inherit;
+    color:rgb(0, 0, 0);
+
     font-weight: 700;
     text-transform: uppercase;
 }
-.alert-div .wrapper button:hover, a:hover{
+.alert-div .wrapper button:hover, button:hover, a:hover{
     text-decoration:underline;
-    color: gold;
+    color: gold !important;
 }
 
 .alert-div .signin-error {

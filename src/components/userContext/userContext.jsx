@@ -16,7 +16,10 @@ export function AuthProvider({children}) {
 
 
     useEffect(()=> {
-        const LoggedUser = JSON.parse(localStorage.getItem('user'));
+      if(typeof(window.localStorage.getItem('user') !== 'object')) {
+        return
+      }
+        const LoggedUser = localStorage.getItem('user')
         
         if(LoggedUser && LoggedUser.id){
           setUser(LoggedUser)
@@ -28,13 +31,14 @@ export function AuthProvider({children}) {
     
     
       }, [])
-
+// Change local storage if rank has been changed
       useEffect(()=>{
         window.localStorage.setItem('user', JSON.stringify(user))
 
       }, [user.rank])
   
-  
+
+      // reset everything if new user has been logged in
       useEffect(()=> {
         setImageUrl('')
         setBox([{}])

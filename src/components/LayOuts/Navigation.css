@@ -2,8 +2,7 @@
     /* position: absolute; */
     display: flex;
 
-    font-size: 1.5rem;
-    letter-spacing: .1rem;
+    font-size: clamp(1.25rem, 1.197rem + 0.225vw, 1.4rem);    letter-spacing: .1rem;
 }
 
 .navigation {

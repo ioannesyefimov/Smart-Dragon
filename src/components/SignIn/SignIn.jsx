@@ -48,13 +48,7 @@ function SignIn() {
         }
 
         e.preventDefault();
-        // fetch('https://smart-dragon-server.onrender.com/signin', {
-        //     method: 'post',
-        //     headers: {'Content-Type': 'application/json'},
-        //     body: JSON.stringify({
-        //         email: signInEmail,
-        //         password: signInPassword,
-        //     })
+
         fetch('https://smart-dragon-server.onrender.com/signin', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
@@ -76,7 +70,7 @@ function SignIn() {
                 //         entries: user.entries
                 //     })
                 // })
-                fetch("http://localhost:3000/rank",{
+                fetch("https://smart-dragon-server.onrender.com/rank",{
                     method: "put",
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify({
@@ -96,7 +90,7 @@ function SignIn() {
 
   return (
     <>
-    <article style={{marginTop: '8rem'}} className="br2  ba dark-gray b--black-10 mv4 w-100 w-75-m w-25-l mw6 shadow-5 center ">
+    <article style={{marginTop: '8rem'}} className="br2  ba dark-gray b--black-10 mv4 w-100 w-75-m w-50-l mw6 shadow-5 center ">
         <main className="pa4 black-80 tc signin-component signin-form">
        
             <div className="measure w-100 center">
